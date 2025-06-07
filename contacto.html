@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Cielo de Algodón</title>
+  <style>
+    body {
+      background-color: #e6f2fc;
+      font-family: 'Segoe UI', sans-serif;
+      color: #2d3e50;
+      padding: 30px;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #4a90e2;
+      margin-bottom: 20px;
+    }
+    p {
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: center;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #386fa4;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: inherit;
+    }
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #4a90e2;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #357ab8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contáctanos</h1>
+
+  <p>¿Tienes alguna duda, sugerencia o simplemente quieres saludarnos? En <b>Cielo de Algodón</b> estaremos encantados de saber de ti. Completa el formulario a continuación y te responderemos lo más pronto posible.</p>
+
+  <form action="#" method="post">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+
+</body>
+</html>

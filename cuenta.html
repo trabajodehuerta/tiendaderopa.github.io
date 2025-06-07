@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Cuenta - Cielo de Algodón</title>
+  <style>
+    body {
+      background-color: #f0faff;
+      font-family: 'Segoe UI', sans-serif;
+      color: #2c3e50;
+      padding: 30px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #4a90e2;
+      margin-bottom: 30px;
+    }
+
+    .cuenta-container {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #386fa4;
+      margin-top: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #386fa4;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #4a90e2;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #357ab8;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Mi Cuenta</h1>
+
+  <div class="cuenta-container">
+
+    <h2>Iniciar Sesión</h2>
+    <form action="#" method="post">
+      <label for="usuario">Correo electrónico:</label>
+      <input type="email" id="usuario" name="usuario" required>
+
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <p>¿Olvidaste tu contraseña? <a href="#">Recupérala aquí</a></p>
+
+    <hr style="margin: 40px 0; border: none; border-top: 1px solid #d0e4f2;">
+
+    <h2>¿Aún no tienes cuenta?</h2>
+    <p>Crea una cuenta para disfrutar de nuestras colecciones exclusivas, realizar pedidos fácilmente y guardar tus favoritos.</p>
+    <form action="#" method="post">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="nuevo-correo">Correo electrónico:</label>
+      <input type="email" id="nuevo-correo" name="nuevo-correo" required>
+
+      <label for="nueva-contrasena">Crear contraseña:</label>
+      <input type="password" id="nueva-contrasena" name="nueva-contrasena" required>
+
+      <button type="submit">Crear Cuenta</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
