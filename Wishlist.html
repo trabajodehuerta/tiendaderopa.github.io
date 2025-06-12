@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Mi Wishlist</title>
+</head>
+<body>
+
+<h1>Mi Wishlist</h1>
+
+<input id="itemInput" placeholder="Nombre de la prenda" />
+<button onclick="addItem()">Agregar</button>
+
+<ul id="wishlistItems"></ul>
+
+<script>
+  const list = document.getElementById('wishlistItems');
+
+  function addItem() {
+    const input = document.getElementById('itemInput');
+    const value = input.value.trim();
+    if (value === '') return;
+    const li = document.createElement('li');
+    li.textContent = value;
+    li.onclick = () => li.remove();
+    list.appendChild(li);
+    input.value = '';
+  }
+</script>
+
+</body>
+</html>

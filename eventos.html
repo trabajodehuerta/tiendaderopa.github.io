@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Eventos - Cielo de Algodón</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e6f0fa;
+    color: #334e7c;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  h1 {
+    text-align: center;
+    color: #1a3d7c;
+    margin-bottom: 25px;
+  }
+  p {
+    margin-bottom: 16px;
+    font-size: 1rem;
+  }
+  b {
+    color: #1a3d7c;
+  }
+  .event-list {
+    margin-top: 20px;
+  }
+  .event-item {
+    background: #c8d9f1;
+    padding: 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+  }
+  .event-date {
+    font-weight: bold;
+    color: #1a3d7c;
+  }
+  form {
+    background: #c8d9f1;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 450px;
+    margin: 30px auto 0 auto;
+  }
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #1a3d7c;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #a5b8db;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  button {
+    background-color: #1a3d7c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #143264;
+  }
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    form {
+      width: 100%;
+      margin: 20px 0 0 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Eventos de Cielo de Algodón</h1>
+
+<p><b>En Cielo de Algodón nos encanta conectar con nuestra comunidad a través de eventos especiales que celebran la moda, la creatividad y el estilo de vida fresco y elegante.</b> Aquí te compartimos las fechas y detalles de nuestros próximos desfiles, pop-ups, colaboraciones y charlas para que puedas acompañarnos y vivir la experiencia completa.</p>
+
+<div class="event-list">
+  <div class="event-item">
+    <p class="event-date">12 de Julio 2025 - 18:00 hrs</p>
+    <p><b>Desfile “Brisa Marina”</b> en el Teatro Azul, Ciudad de México. Presentaremos nuestra nueva colección inspirada en el mar, con modelos en pasarela y una experiencia visual que te transportará a la costa.</p>
+  </div>
+  <div class="event-item">
+    <p class="event-date">5-7 de Agosto 2025</p>
+    <p><b>Pop-up Store en Plaza Central, Guadalajara.</b> Tres días para descubrir nuestras prendas y accesorios en un espacio exclusivo con promociones especiales y encuentros con diseñadoras.</p>
+  </div>
+  <div class="event-item">
+    <p class="event-date">20 de Septiembre 2025 - 16:00 hrs</p>
+    <p><b>Charla “Moda Sostenible y Ética”</b> en la Biblioteca Municipal, Monterrey. Una conversación abierta con nuestras diseñadoras sobre el cuidado del planeta y la moda consciente.</p>
+  </div>
+  <div class="event-item">
+    <p class="event-date">10 de Octubre 2025</p>
+    <p><b>Colaboración especial con “Azul Urbano”</b>, marca local de calzado. Presentaremos una edición limitada de prendas y zapatos coordinados, disponibles en nuestras tiendas y online.</p>
+  </div>
+</div>
+
+<h2>Confirma tu asistencia</h2>
+<form action="#" method="post">
+  <label for="nombre">Nombre completo</label>
+  <input type="text" id="nombre" name="nombre" required />
+  
+  <label for="email">Correo electrónico</label>
+  <input type="email" id="email" name="email" required />
+  
+  <label for="evento">Evento al que asistirás</label>
+  <select id="evento" name="evento" required>
+    <option value="" disabled selected>Selecciona un evento</option>
+    <option value="desfile">Desfile “Brisa Marina” - 12 Julio 2025</option>
+    <option value="popup">Pop-up Store Guadalajara - 5-7 Agosto 2025</option>
+    <option value="charla">Charla “Moda Sostenible” - 20 Septiembre 2025</option>
+    <option value="colaboracion">Colaboración “Azul Urbano” - 10 Octubre 2025</option>
+  </select>
+  
+  <label for="comentarios">Comentarios (opcional)</label>
+  <textarea id="comentarios" name="comentarios" rows="4" placeholder="¿Alguna pregunta o comentario?"></textarea>
+  
+  <button type="submit">Enviar RSVP</button>
+</form>
+
+</body>
+</html>
